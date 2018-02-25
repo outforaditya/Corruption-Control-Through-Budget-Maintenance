@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+  <servlet>
+    
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.ccbm.util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChekUserAction</servlet-name>
+    <servlet-class>com.ccbm.action.ChekUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegistrationAction</servlet-name>
+    <servlet-class>com.ccbm.action.RegistrationAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.ccbm.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.ccbm.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.ccbm.action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeptOfficerRegistrationAction</servlet-name>
+    <servlet-class>com.ccbm.action.DeptOfficerRegistrationAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeptChekUserAction</servlet-name>
+    <servlet-class>com.ccbm.action.DeptChekUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DistcoChekUserAction</servlet-name>
+    <servlet-class>com.ccbm.action.DistcoChekUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeptOfficersAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDeptOfficersAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistrictOfficersAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistrictOfficersAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDeptAction</servlet-name>
+    <servlet-class>com.ccbm.action.AddDeptAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDepartmentAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDepartmentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSubDepartmentAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewSubDepartmentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddStateBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.AddStateBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeptsforAddDept</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDeptsforAddDept</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewStateBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewStateBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequesttoBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.RequesttoBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDeptBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.GetDeptBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DistributeBudgettoDistrictsAction</servlet-name>
+    <servlet-class>com.ccbm.action.DistributeBudgettoDistrictsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertDistrictBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.InsertDistrictBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDistBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.GetDistBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DistributeBudgettoWorkAction</servlet-name>
+    <servlet-class>com.ccbm.action.DistributeBudgettoWorkAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertWorkBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.InsertWorkBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContractorLoginAction</servlet-name>
+    <servlet-class>com.ccbm.action.ContractorLoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChekContractorUserAction</servlet-name>
+    <servlet-class>com.ccbm.action.ChekContractorUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContractorAction</servlet-name>
+    <servlet-class>com.ccbm.action.ContractorAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WorkDetailsAction</servlet-name>
+    <servlet-class>com.ccbm.action.WorkDetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContractorStatusAction</servlet-name>
+    <servlet-class>com.ccbm.action.ContractorStatusAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewWorkDetailsAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewWorkDetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewConntractorWorkDetailsAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewConntractorWorkDetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequesttoContractorBudget</servlet-name>
+    <servlet-class>com.ccbm.action.RequesttoContractorBudget</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetContractorBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.GetContractorBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewConntractorWorkInfoAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewConntractorWorkInfoAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertContractorWorkAction</servlet-name>
+    <servlet-class>com.ccbm.action.InsertContractorWorkAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewContractorWorkDetailsAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewContractorWorkDetailsAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateContractorWorkAction</servlet-name>
+    <servlet-class>com.ccbm.action.UpdateContractorWorkAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeptforCitzenAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDeptforCitzenAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSubDepartmentBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewSubDepartmentBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistforCitzenAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistforCitzenAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDepartmentsforWorkAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDepartmentsforWorkAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistforWorkAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistforWorkAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewWorkDetailsforCitizenAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewWorkDetailsforCitizenAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackAction</servlet-name>
+    <servlet-class>com.ccbm.action.FeedbackAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryAction</servlet-name>
+    <servlet-class>com.ccbm.action.QueryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewQueryAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewQueryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReplytoQueryAction</servlet-name>
+    <servlet-class>com.ccbm.action.ReplytoQueryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteQueryAction</servlet-name>
+    <servlet-class>com.ccbm.action.DeleteQueryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayQueryStatusAction</servlet-name>
+    <servlet-class>com.ccbm.action.DisplayQueryStatusAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewContractorApplicationAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewContractorApplicationAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AcceptContractorAction</servlet-name>
+    <servlet-class>com.ccbm.action.AcceptContractorAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction1</servlet-name>
+    <servlet-class>com.ccbm.action.LoginAction1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewQueryforDeleteAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewQueryforDeleteAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDeptofficerAction</servlet-name>
+    <servlet-class>com.ccbm.action.DeleteDeptofficerAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDepartmentsofDo</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDepartmentsofDo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeptOffAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDeptOffAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistOffAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistOffAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDeptAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDeptAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSubDepartmentBudget1Action</servlet-name>
+    <servlet-class>com.ccbm.action.ViewSubDepartmentBudget1Action</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateBudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.UpdateBudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletebudgetAction</servlet-name>
+    <servlet-class>com.ccbm.action.DeletebudgetAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistBudget1Action</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistBudget1Action</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistDistribuetdAction</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistDistribuetdAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDistBudgetforCitizen</servlet-name>
+    <servlet-class>com.ccbm.action.ViewDistBudgetforCitizen</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExportXLS</servlet-name>
+    <servlet-class>com.ccbm.export.ExportXLS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDistOfficerAction</servlet-name>
+    <servlet-class>com.ccbm.action.DeleteDistOfficerAction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <servlet-mapping>
+    <servlet-name>ExportXLS</servlet-name>
+    <url-pattern>/ExportXLS</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet-mapping>
+    <servlet-name>ChekUserAction</servlet-name>
+    <url-pattern>/ChekUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistrationAction</servlet-name>
+    <url-pattern>/RegistrationAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeptOfficerRegistrationAction</servlet-name>
+    <url-pattern>/DeptOfficerRegistrationAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeptChekUserAction</servlet-name>
+    <url-pattern>/DeptChekUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DistcoChekUserAction</servlet-name>
+    <url-pattern>/DistcoChekUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeptOfficersAction</servlet-name>
+    <url-pattern>/ViewDeptOfficersAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistrictOfficersAction</servlet-name>
+    <url-pattern>/ViewDistrictOfficersAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDeptAction</servlet-name>
+    <url-pattern>/AddDeptAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDepartmentAction</servlet-name>
+    <url-pattern>/ViewDepartmentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSubDepartmentAction</servlet-name>
+    <url-pattern>/ViewSubDepartmentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddStateBudgetAction</servlet-name>
+    <url-pattern>/AddStateBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeptsforAddDept</servlet-name>
+    <url-pattern>/ViewDeptsforAddDept</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewStateBudgetAction</servlet-name>
+    <url-pattern>/ViewStateBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequesttoBudgetAction</servlet-name>
+    <url-pattern>/RequesttoBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDeptBudgetAction</servlet-name>
+    <url-pattern>/GetDeptBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DistributeBudgettoDistrictsAction</servlet-name>
+    <url-pattern>/DistributeBudgettoDistrictsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertDistrictBudgetAction</servlet-name>
+    <url-pattern>/InsertDistrictBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistBudgetAction</servlet-name>
+    <url-pattern>/ViewDistBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDistBudgetAction</servlet-name>
+    <url-pattern>/GetDistBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DistributeBudgettoWorkAction</servlet-name>
+    <url-pattern>/DistributeBudgettoWorkAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertWorkBudgetAction</servlet-name>
+    <url-pattern>/InsertWorkBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContractorLoginAction</servlet-name>
+    <url-pattern>/ContractorLoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChekContractorUserAction</servlet-name>
+    <url-pattern>/ChekContractorUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContractorAction</servlet-name>
+    <url-pattern>/ContractorAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkDetailsAction</servlet-name>
+    <url-pattern>/WorkDetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContractorStatusAction</servlet-name>
+    <url-pattern>/ContractorStatusAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewWorkDetailsAction</servlet-name>
+    <url-pattern>/ViewWorkDetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewConntractorWorkDetailsAction</servlet-name>
+    <url-pattern>/ViewConntractorWorkDetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequesttoContractorBudget</servlet-name>
+    <url-pattern>/RequesttoContractorBudget</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetContractorBudgetAction</servlet-name>
+    <url-pattern>/GetContractorBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewConntractorWorkInfoAction</servlet-name>
+    <url-pattern>/ViewConntractorWorkInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertContractorWorkAction</servlet-name>
+    <url-pattern>/InsertContractorWorkAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewContractorWorkDetailsAction</servlet-name>
+    <url-pattern>/ViewContractorWorkDetailsAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateContractorWorkAction</servlet-name>
+    <url-pattern>/UpdateContractorWorkAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeptforCitzenAction</servlet-name>
+    <url-pattern>/ViewDeptforCitzenAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSubDepartmentBudgetAction</servlet-name>
+    <url-pattern>/ViewSubDepartmentBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistforCitzenAction</servlet-name>
+    <url-pattern>/ViewDistforCitzenAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDepartmentsforWorkAction</servlet-name>
+    <url-pattern>/ViewDepartmentsforWorkAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistforWorkAction</servlet-name>
+    <url-pattern>/ViewDistforWorkAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewWorkDetailsforCitizenAction</servlet-name>
+    <url-pattern>/ViewWorkDetailsforCitizenAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackAction</servlet-name>
+    <url-pattern>/FeedbackAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryAction</servlet-name>
+    <url-pattern>/QueryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewQueryAction</servlet-name>
+    <url-pattern>/ViewQueryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReplytoQueryAction</servlet-name>
+    <url-pattern>/ReplytoQueryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteQueryAction</servlet-name>
+    <url-pattern>/DeleteQueryAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayQueryStatusAction</servlet-name>
+    <url-pattern>/DisplayQueryStatusAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewContractorApplicationAction</servlet-name>
+    <url-pattern>/ViewContractorApplicationAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AcceptContractorAction</servlet-name>
+    <url-pattern>/AcceptContractorAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction1</servlet-name>
+    <url-pattern>/LoginAction1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewQueryforDeleteAction</servlet-name>
+    <url-pattern>/ViewQueryforDeleteAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDeptofficerAction</servlet-name>
+    <url-pattern>/DeleteDeptofficerAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDepartmentsofDo</servlet-name>
+    <url-pattern>/ViewDepartmentsofDo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeptOffAction</servlet-name>
+    <url-pattern>/ViewDeptOffAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistOffAction</servlet-name>
+    <url-pattern>/ViewDistOffAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDeptAction</servlet-name>
+    <url-pattern>/ViewDeptAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSubDepartmentBudget1Action</servlet-name>
+    <url-pattern>/ViewSubDepartmentBudget1Action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateBudgetAction</servlet-name>
+    <url-pattern>/UpdateBudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletebudgetAction</servlet-name>
+    <url-pattern>/DeletebudgetAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistBudget1Action</servlet-name>
+    <url-pattern>/ViewDistBudget1Action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistDistribuetdAction</servlet-name>
+    <url-pattern>/ViewDistDistribuetdAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDistBudgetforCitizen</servlet-name>
+    <url-pattern>/ViewDistBudgetforCitizen</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDistOfficerAction</servlet-name>
+    <url-pattern>/DeleteDistOfficerAction</url-pattern>
+  </servlet-mapping>
+	
+  
+  <welcome-file-list>
+    <welcome-file>/jsps/home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

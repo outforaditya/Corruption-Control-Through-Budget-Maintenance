@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="ccbm" database="CCBM" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="ADDRESSES">
+      <Drawing expanded="true" location="230,327" dimensions="206,247" />
+      <Columns>
+        <Column name="USERID" primary_key="true" foreign_key="true" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ADDRESSID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ADDRESSTYPE" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="VARCHAR2" size="10" />
+        </Column>
+        <Column name="HOUSENO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="AREA" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="DISTRICT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="PINCODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="10" />
+        </Column>
+        <Column name="PHNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="15" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="ANSWER">
+      <Drawing expanded="true" location="54,50" dimensions="176,127" />
+      <Columns>
+        <Column name="AID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="300" />
+        </Column>
+        <Column name="ADATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="QIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CONTRACTOR">
+      <Drawing expanded="true" location="845,396" dimensions="213,108" />
+      <Columns>
+        <Column name="CONTRCTORID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="INTRESTDIN" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="100" />
+        </Column>
+        <Column name="DCOWILLING" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CONTRACTOR_CONFIRMATION">
+      <Drawing expanded="true" location="536,406" dimensions="209,88" />
+      <Columns>
+        <Column name="C_CONFIRMID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="CONFIRM" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CONTROCTORLOGIN">
+      <Drawing expanded="true" location="798,59" dimensions="201,108" />
+      <Columns>
+        <Column name="CID_NO" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="CONTRCTORID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="LOGINNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DEPARTMENT">
+      <Drawing expanded="true" location="1286,1073" dimensions="196,89" />
+      <Columns>
+        <Column name="DEPTNO" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEPTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DEPTOFFICER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DISTFUNDSTATUS">
+      <Drawing expanded="true" location="1811,69" dimensions="200,88" />
+      <Columns>
+        <Column name="DFID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DISTBUDGETID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DISTRICT">
+      <Drawing expanded="true" location="1863,804" dimensions="178,89" />
+      <Columns>
+        <Column name="DISTID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DISTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="DISTDCO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DIST_BUDGET">
+      <Drawing expanded="true" location="1806,367" dimensions="211,166" />
+      <Columns>
+        <Column name="DISTBUDGETID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="AMT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="10,2" />
+        </Column>
+        <Column name="FYEAR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DISTRIBUTEDBY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="DEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SUBDEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="DIST_BUDGET_DISTRIBUTION">
+      <Drawing expanded="true" location="1437,337" dimensions="269,226" />
+      <Columns>
+        <Column name="WORKID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="WORKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="AMT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="10,2" />
+        </Column>
+        <Column name="FYEAR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DISTRIBUTEDBY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="NOTIFICATIONCLOSEDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="WORKCOMPLT_TARGETDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SUBDEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DISTIDREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="FEEDBACK">
+      <Drawing expanded="true" location="0,1207" dimensions="184,189" />
+      <Columns>
+        <Column name="FID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="PHNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="EMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="FEEDBACK" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="100" />
+        </Column>
+        <Column name="FDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGINMASTER">
+      <Drawing expanded="true" location="1159,406" dimensions="178,88" />
+      <Columns>
+        <Column name="USERID" primary_key="true" foreign_key="true" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="LOGINTIME" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="LOGOFFTIME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="QUERY">
+      <Drawing expanded="true" location="0,396" dimensions="170,108" />
+      <Columns>
+        <Column name="QID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="QUERY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="300" />
+        </Column>
+        <Column name="QDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="STATEBUDGET">
+      <Drawing expanded="true" location="814,784" dimensions="199,128" />
+      <Columns>
+        <Column name="BUDGETID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SUBDEPTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="AMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="10,2" />
+        </Column>
+        <Column name="FYEAR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="STATEFUNDSTATUS">
+      <Drawing expanded="true" location="83,804" dimensions="186,88" />
+      <Columns>
+        <Column name="SFID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="SUB_DEPARTMENT">
+      <Drawing expanded="true" location="1564,784" dimensions="199,128" />
+      <Columns>
+        <Column name="SUBDEPTNO" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SUBDEPTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="AMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="10,2" />
+        </Column>
+        <Column name="YEAR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DEPTNOREF" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="USERDETAILS">
+      <Drawing expanded="true" location="369,724" dimensions="237,249" />
+      <Columns>
+        <Column name="USERID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="FIRSTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="LASTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="DOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="LOGINID" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="VARCHAR2" size="50" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+        <Column name="LOGINTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="20" />
+        </Column>
+        <Column name="FORGOTPWQUESTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="70" />
+        </Column>
+        <Column name="FORGOTPWANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="70" />
+        </Column>
+        <Column name="PHOTOGRAPH" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="EMAILID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="50" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="WORKDETAILS">
+      <Drawing expanded="true" location="1400,0" dimensions="228,227" />
+      <Columns>
+        <Column name="WORK_DETAILSID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="CONTRCTORID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="WORKID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NO_OF_WORKER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="STARTDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="ENDDATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="AMT_RELEASED" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="10,2" />
+        </Column>
+        <Column name="AMT_SPENT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="10,2" />
+        </Column>
+        <Column name="PHOTO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="BLOB" size="4000" />
+        </Column>
+        <Column name="WORKSTATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="30" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="ADDRESSES">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="ANSWER_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="ANSWER">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="QUE_USERID_FK">
+      <Details primary_table="QUERY" foreign_table="ANSWER">
+        <PrimaryKeys>
+          <ColumnName name="QID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="QIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="CONTRACT_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="CONTRACTOR">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="CONTRACT_CONFIRM_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="CONTRACTOR_CONFIRMATION">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="CONTRACTORLOGIN_FK">
+      <Details primary_table="CONTRACTOR" foreign_table="CONTROCTORLOGIN">
+        <PrimaryKeys>
+          <ColumnName name="CONTRCTORID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="CONTRCTORID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTFUND_FK">
+      <Details primary_table="DIST_BUDGET" foreign_table="DISTFUNDSTATUS">
+        <PrimaryKeys>
+          <ColumnName name="DISTBUDGETID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DISTBUDGETID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTBUDGET_DISTID_FK">
+      <Details primary_table="DISTRICT" foreign_table="DIST_BUDGET">
+        <PrimaryKeys>
+          <ColumnName name="DISTID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTBUDGET_SUBDEPTID_FK">
+      <Details primary_table="SUB_DEPARTMENT" foreign_table="DIST_BUDGET">
+        <PrimaryKeys>
+          <ColumnName name="SUBDEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="SUBDEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTBUDGET_DEPTID_FK">
+      <Details primary_table="DEPARTMENT" foreign_table="DIST_BUDGET">
+        <PrimaryKeys>
+          <ColumnName name="DEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTBUDGET_WORKID_FK">
+      <Details primary_table="DEPARTMENT" foreign_table="DIST_BUDGET_DISTRIBUTION">
+        <PrimaryKeys>
+          <ColumnName name="DEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTBUDGET_SUBDEPTWORKID_FK">
+      <Details primary_table="SUB_DEPARTMENT" foreign_table="DIST_BUDGET_DISTRIBUTION">
+        <PrimaryKeys>
+          <ColumnName name="SUBDEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="SUBDEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DISTBUDGET_WORKDISTID_FK">
+      <Details primary_table="DISTRICT" foreign_table="DIST_BUDGET_DISTRIBUTION">
+        <PrimaryKeys>
+          <ColumnName name="DISTID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DISTIDREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="LOGINMASTER_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="LOGINMASTER">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="QUERY_USERID_FK">
+      <Details primary_table="USERDETAILS" foreign_table="QUERY">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="STATEBUDGET_DEPTID_FK">
+      <Details primary_table="DEPARTMENT" foreign_table="STATEBUDGET">
+        <PrimaryKeys>
+          <ColumnName name="DEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="STATEFUND_FK">
+      <Details primary_table="DEPARTMENT" foreign_table="STATEFUNDSTATUS">
+        <PrimaryKeys>
+          <ColumnName name="DEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="DEPT_DEPTID_FK">
+      <Details primary_table="DEPARTMENT" foreign_table="SUB_DEPARTMENT">
+        <PrimaryKeys>
+          <ColumnName name="DEPTNO" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="DEPTNOREF" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="WORKDETAILS_CONTRACTOR_FK">
+      <Details primary_table="CONTRACTOR" foreign_table="WORKDETAILS">
+        <PrimaryKeys>
+          <ColumnName name="CONTRCTORID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="CONTRCTORID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="WORKDETAILS_WORK_FK">
+      <Details primary_table="DIST_BUDGET_DISTRIBUTION" foreign_table="WORKDETAILS">
+        <PrimaryKeys>
+          <ColumnName name="WORKID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="WORKID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+
